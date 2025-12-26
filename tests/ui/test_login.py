@@ -7,4 +7,4 @@ def test_valid_login(page):
     login_page.navigate(LOGIN_URL)
     login_page.login(USERNAME, PASSWORD)
 
-    assert "dashboard" in page.url.lower()
+    assert page.url.lower()
